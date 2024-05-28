@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- sdn -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/stayle.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <style>
+    /* General dark mode styles */
+    .dark-mode {
+      background-color: rgb(23, 42, 46);
+      color: #fff;
+    }
+
+    .dark-mode .navbar {
+      background-color: rgb(23, 42, 46);
+      color: #fff;
+    }
+
+    .dark-mode .navbar-toggler {
+      border-color: #fff;
+    }
+
+    .dark-mode .nav-link {
+      color: #fff !important;
+    }
+
+    .dark-mode .ionicon {
+      color: #fff;
+    }
+
+    .dark-mode .footer {
+      background-color: rgb(23, 42, 46);
+      color: #fff;
+    }
+
+    .dark-mode .links a {
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .dark-mode .navbar-toggler {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+  </style>
+
+  <body class="dark-mode bascgorng">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg mt-3">
+      <div class="container">
+        <a style="width: 190px" class="navbar-brand p-0 m-0" href="#">
+          <img
+            class="logo"
+            src="./img/Anilovers logo (4).png"
+            alt="Anilovers Logo"
+            width="100%"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars-staggered" style="color: #ffffff"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <!-- <i class="fa-solid fa-heart psd" style="color: #ffffff"></i> -->
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3" id="hr">
+            <div class="d-flex gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <div id="dark-mode-toggle" class="ms-auto">
+                <i id="moon-icon" class="fas fa-moon"></i>
+                <i id="sun-icon" class="fas fa-sun" style="display: none"></i>
+              </div>
+            </div>
+            <!-- input -->
+            <div class="conta">
+              <input
+                type="text"
+                name="text"
+                class="input"
+                required=""
+                placeholder="Type to search..."
+              />
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Search</title>
+                  <path
+                    d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  ></path>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M338.29 338.29L448 448"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <button id="form-open" class="nav_button text-white">
+              <i
+                class="fa-solid fa-arrow-right-to-bracket"
+                style="color: #ffffff"
+              ></i>
+              Kirish
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+
+    <header class="container"></header>
+
+    <section class="container">
+      <div
+        style="flex-wrap: wrap"
+        class="d-flex align-items-center justify-content-between wrepper"
+      >
+        <div class="row p-3">
+          <div class="col-xl-3">
+            <button class="Categori_button text-center">
+              Anime Yangiliklar
+            </button>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-12">
+            <button class="Categori_button text-center">Yangi animelar</button>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-12">
+            <button class="Categori_button text-center">Anime filimlar</button>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-12">
+            <button class="Categori_button text-center">Ongoing</button>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-12"></div>
+        </div>
+        <div class="">
+          <button class="Categori_but text-center">
+            Barchasi
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- sedction_caard -->
+    <section class="container-fluid mb-5">
+      <div class="row row-gap-1 best justify-content-center" id="row"></div>
+    </section>
+
+    <!-- section_anime yangiliklar -->
+
+    <section class="container">
+      <div style="margin-top: 100px" class="row">
+        <div class="text-white col-xl-4 col-lg-4 col-12">
+          <img src="./img/Anilovers logo (4).png" alt="" width="260px" />
+          <!-- <h4 class="new_title">Anime yangiliklar</h4> -->
+          <p class="neew_subttile">
+            <b>Bahor 2024 :</b> Amediatv.uz da chiqishi kutilayotgan Anime lar.
+            Haqida malumotlar
+          </p>
+          <h5>Animelar royxati</h5>
+          <div class="borde">Kayju 8-raqam</div>
+          <div class="borde">Solo Leveling <span>[17+]</span></div>
+          <div class="borde">qayta tugʻilishim <span>[17+]</span></div>
+          <div class="borde">Shamolni bo'ysindirish <span>[16+]</span></div>
+          <div class="borde">
+            shahzoda sifatida qayta tugʻildim <span>[16+]</span>
+          </div>
+          <div class="borde">Yangi darvoza <span>[17+]</span></div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-12">
+          <div class="iferam_vedio">
+            <iframe
+              class="ifrg"
+              src="https://www.youtube.com/embed/7szgmqHqc54"
+              title="Bahor 2024: Amediatv.uz da chiqishi kutilayotgan Anime lar."
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer nest">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img
+            src="./img/Anilovers logo (4).png"
+            alt="Anilovers Logo"
+            width="200px"
+          />
+          <ul class="links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Collection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="links">
+            <li><a href="#">Anime yangiliklar</a></li>
+            <li><a href="#">Yangi animelar</a></li>
+            <li><a href="#">Ongoing</a></li>
+            <li><a href="#">Yakunlangan animelar</a></li>
+            <li><a href="#">Anime contentlar</a></li>
+            <li><a href="#">Anime filimlar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="links">
+            <li><a href="#">Customer Agreement</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">GDPR</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter for a weekly dose of news, updates,
+            helpful tips, and exclusive offers.
+          </p>
+          <form action="#">
+            <input type="text" placeholder="Your email" required />
+            <button class="btn btn-outline-info">submit</button>
+          </form>
+          <div class="icons">
+            <a href="https://youtube.com/@anigreat_uz?si=ewAvC6oPMy0l2aNV">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://t.me/Anime_uzbekcha">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="https://github.com/Wlwkfu">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/render.js"></script>
+    <script src="./js/darkmod.js"></script>
+  </body>
+</html>

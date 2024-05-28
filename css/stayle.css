@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.kirish {
+  height: 100vh;
+}
+
+.footer {
+  margin-top: 250px !important;
+  background-color: #95bdfe;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+
+.nav-link:hover {
+  color: rgb(252, 196, 84) !important;
+  transition: 0.3s;
+}
+.nav_button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.nav_button:hover {
+  background-color: rgb(252, 196, 84);
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+.nav_button i {
+  font-size: 17px !important;
+}
+
+/* all button style */
+
+.button {
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.648);
+  border-radius: 10px;
+  border: 2px solid #f29824;
+  color: #f29824;
+}
+
+.button:hover {
+  background: #f29824;
+  color: white;
+}
+.section_card {
+  position: relative;
+  max-width: 340px;
+}
+
+.section_card img {
+  /* width: 220px; */
+  height: 300px !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.section_card:hover img {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+
+.section_card .content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 20px;
+  padding-right: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.section_card:hover .content {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 15px !important;
+}
+
+.spank {
+  width: 60px;
+  height: 25px;
+  font-size: 15px;
+  text-align: center;
+  color: #fdfdfd;
+  padding: 1px;
+  background-color: #f29824;
+  border-radius: 5px;
+}
+
+.sdf {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+
+/* button animatsiya style */
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button {
+  --primary-color: #ffffff;
+  --hovered-color: #f09c42;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.data:hover {
+  color: #f09c42;
+
+  cursor: pointer;
+}
+.data {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+
+.btton::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+button p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Ko'rish";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+button:hover p::before {
+  width: 100%;
+}
+
+button:hover i {
+  transform: translateX(4px);
+  color: var(--hovered-color);
+}
+
+button i {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  transition-delay: 0.2s;
+}
+
+/* card media */
+
+@media screen and (max-width: 468px) {
+  #row {
+    justify-content: center;
+    padding-left: 47px;
+  }
+}
+
+/* input style */
+
+.conta {
+  position: relative;
+  --size-button: 40px;
+  color: rgb(241, 168, 23);
+}
+
+.input {
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 16px;
+  border: none;
+  color: rgb(255, 255, 255);
+  outline: none;
+  width: var(--size-button);
+  transition: all ease 0.3s;
+  background: transparent;
+  cursor: pointer;
+}
+
+.input:focus,
+.input:not(:invalid) {
+  width: 200px;
+  cursor: text;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgba(95, 94, 94, 0.25),
+    inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+}
+
+.input:focus + .icon,
+.input:not(:invalid) + .icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.conta .icon {
+  position: absolute;
+  width: var(--size-button);
+  height: var(--size-button);
+  top: 1px;
+  left: 7px;
+  pointer-events: none;
+}
+
+.conta .icon svg {
+  width: 60%;
+  height: 100%;
+}
+
+/* section_catefory */
+
+.Categori_button {
+  display: flex;
+  justify-content: center;
+  color: rgb(241, 168, 23);
+  width: 170px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid rgb(241, 168, 23);
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.Categori_button:hover {
+  background-color: rgb(241, 168, 23);
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+
+.Categori_but {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(241, 168, 23);
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.Categori_but:hover {
+  color: rgb(241, 168, 23);
+}
+
+/* scrollbars */
+
+.crate {
+  max-width: 400px;
+  height: 490px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: #333;
+}
+
+.crate::-webkit-scrollbar {
+  display: none;
+}
+
+/* scroolbars _card */
+
+.sc_img {
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+}
+
+.sc_subtitle {
+  font: size 10px !important;
+}
+/* anime yangiliklar style */
+
+.iferam_vedio {
+  /* max-width: 100%; */
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.new_title {
+}
+.neew_subttile {
+  max-width: 600px;
+}
+
+span {
+  color: #f9a448;
+  font-weight: bold;
+}
+
+.borde {
+  border-bottom: 2px solid #f9a448;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.ifrg {
+  width: 800px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.psd {
+  cursor: pointer;
+}
+
+.bascgorng {
+  background-color: #95bdfe;
+  width: 100%;
+}
