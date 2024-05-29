@@ -25,7 +25,13 @@ function closeModal() {
     // Modalni yashirish
     modal.style.display = "none";
   } else {
-    alert("Login yoki parol noto'g'ri");
+    Toastify({
+      text: "parol yoki kod xato",
+      duration: 3000,
+      style: {
+        background: "green",
+      },
+    }).showToast();
 
     // Modalni yashirish
     modal.style.display = "none";
