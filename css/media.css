@@ -72,4 +72,24 @@
     border-radius: 20px;
     margin-top: 20px;
   }
+  .content_button {
+    font-size: 15px !important;
+  }
+  .content_icon {
+    font-size: 13px;
+  }
+  .content_title {
+    font-size: 19px;
+  }
+  .content_subtitle {
+    font-size: 15px !important;
+  }
+  .Categori_button {
+    width: 90px !important;
+    font-size: 8px !important;
+  }
+  .Categori_but {
+    width: 300px !important;
+    margin-top: 10px;
+  }
 }

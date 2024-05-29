@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+  color: white;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -23,12 +27,18 @@ li {
 .nav-link {
   color: white !important;
   font-weight: 500 !important;
-  font-size: 18px !important;
+  font-size: 17px !important;
 }
 
 .nav-link:hover {
   color: rgb(252, 196, 84) !important;
   transition: 0.3s;
+}
+.content_button {
+  font-size: 18px;
+}
+.content_icon {
+  font-size: 12px;
 }
 .nav_button {
   padding: 8px 20px;
@@ -62,14 +72,10 @@ li {
 }
 .section_card {
   position: relative;
-  max-width: 340px;
+  max-width: 200px !important;
 }
 
 .section_card img {
-  /* width: 220px; */
-  height: 300px !important;
-  -o-object-fit: cover;
-  object-fit: cover;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
@@ -84,8 +90,9 @@ li {
   position: absolute;
   bottom: 0;
   color: white;
-  padding: 20px;
-  padding-right: 40px;
+  padding: 5px;
+  padding-bottom: 10px;
+  /* padding-right: 40px; */
   opacity: 0;
   transition: 0.5s;
 }
@@ -201,7 +208,7 @@ button i {
 @media screen and (max-width: 468px) {
   #row {
     justify-content: center;
-    padding-left: 47px;
+    padding-left: 5px;
   }
 }
 
@@ -245,12 +252,12 @@ button i {
   position: absolute;
   width: var(--size-button);
   height: var(--size-button);
-  top: 1px;
-  left: 7px;
+  top: 10px;
+  left: 10px;
   pointer-events: none;
 }
 
-.conta .icon svg {
+.conta .icon i {
   width: 60%;
   height: 100%;
 }
@@ -296,16 +303,30 @@ button i {
 
 /* scrollbars */
 
-.crate {
-  max-width: 400px;
-  height: 490px;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  padding: 20px;
+#input_div {
+  margin-top: 50px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  color: #333;
+  position: absolute;
+  width: calc(100% - 20px);
+  max-height: 160px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.511);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  top: 48px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 10px;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#input_div.crate {
+  opacity: 1;
+  visibility: visible;
 }
 
 .crate::-webkit-scrollbar {
@@ -363,4 +384,63 @@ span {
 .bascgorng {
   background-color: #95bdfe;
   width: 100%;
+}
+
+/* search_table */
+
+.table_title {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+/* section_card text_style */
+
+.content_button {
+  font-size: 15px !important;
+}
+.content_icon {
+  font-size: 13px;
+}
+.content_title {
+  font-size: 18px;
+}
+.content_subtitle {
+  font-size: 15px !important;
+}
+
+/* admin modal style */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+}
+
+.login button {
+  display: flex;
+  justify-content: center;
+  color: #f09c42;
+  border: 1px solid #f09c42;
+  border-radius: 7px;
+  padding: 2px;
+}
+.login button:hover {
+  background-color: #f09c42;
+  color: white;
+  transition: 0.3s;
 }
