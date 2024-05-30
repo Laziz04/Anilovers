@@ -14,7 +14,7 @@ function closeModal() {
     backdrop.parentNode.removeChild(backdrop);
   }
 
-  if (gmailInput === "adminaka" && passwordInput === "1234") {
+  if (gmailInput === "admin" && passwordInput === "1234") {
     console.log("Kirish muvaffaqiyatli!");
 
     const nav_menu = document.getElementById("nav_menu");
