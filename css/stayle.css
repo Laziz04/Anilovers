@@ -516,3 +516,69 @@ span {
   color: white;
   transition: 0.3s;
 }
+
+/* admin page scroll bar style */
+
+.visible-scrollbar,
+.invisible-scrollbar,
+.mostly-customized-scrollbar {
+  height: 70vh;
+  display: block;
+  overflow: auto;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Demonstrate a "mostly customized" scrollbar
+ * (won't be visible otherwise if width/height is specified) */
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+/* Add a thumb */
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* mostly-customized-scrollbar */
+
+.logren_img {
+  width: 80px;
+  height: 110px;
+}
+
+.bestyurt {
+  left: 255px;
+  position: fixed;
+  top: 110px;
+  right: 0;
+  /* bottom: 0; */
+}
+
+span {
+  cursor: pointer;
+}
+
+/* next page_animation _style */
+
+.fa-caret-left:hover {
+  transform: translateX(-5px);
+  transition: transform 0.3s ease;
+}
+
+.fa-caret-right:hover {
+  transform: translateX(5px);
+  transition: transform 0.3s ease;
+}
+
+span:hover {
+  background: linear-gradient(to right, #30cfd0, #330867);
+  -webkit-background-clip: text;
+  color: transparent;
+}

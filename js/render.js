@@ -53,3 +53,51 @@ const basket = (itemId) => {
 };
 
 render();
+
+// <!-- script _ siadbar Menu -->
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function () {
+  sidebar.classList.toggle("active");
+  if (sidebar.classList.contains("active")) {
+    sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+  } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+};
+
+// <!-- script input img -->
+
+document
+  .getElementById("fileInput")
+  .addEventListener("change", function (event) {
+    var files = event.target.files;
+    var preview = document.getElementById("preview");
+    preview.innerHTML = "";
+
+    for (var i = 0; i < files.length; i++) {
+      var file = files[i];
+
+      if (!file.type.match("image.*")) {
+        continue;
+      }
+
+      var col = document.createElement("div");
+      col.classList.add("col-md-3");
+
+      var img = document.createElement("img");
+      img.src = URL.createObjectURL(file);
+      img.classList.add("img-preview");
+
+      preview.appendChild(img);
+    }
+  });
+
+// <!-- activ _menu _saidbar -->
+
+let navLinks = document.querySelectorAll(".nav-links li");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    navLinks.forEach((item) => item.classList.remove("active"));
+    this.classList.add("active");
+  });
+});

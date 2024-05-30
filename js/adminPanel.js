@@ -1,11 +1,11 @@
 const editModal = new bootstrap.Modal("#editModal", {
   keyboard: false,
 });
-
 let lastId = 0;
+
 function closeModal() {
-  const gmail = document.getElementById("gmail");
-  const password = document.getElementById("password");
+  const gmailInput = document.getElementById("gmail").value;
+  const passwordInput = document.getElementById("password").value;
 
   const modal = document.getElementById("adminPanel");
 
@@ -14,31 +14,39 @@ function closeModal() {
     backdrop.parentNode.removeChild(backdrop);
   }
 
-  if (gmail.value === "admin" && password.value === "200408") {
+  if (gmailInput === "adminaka" && passwordInput === "1234") {
     console.log("Kirish muvaffaqiyatli!");
 
-    nav_menu.style.display = "none";
-    header.style.display = "none";
-    secr_button.style.display = "none";
-    section_card.style.display = "none";
-    secr_yangiliklar.style.display = "none";
-    footer.style.display = "none";
+    const nav_menu = document.getElementById("nav_menu");
+    const header = document.getElementById("header");
+    const secr_button = document.getElementById("secr_button");
+    const section_card = document.getElementById("section_card");
+    const secr_yangiliklar = document.getElementById("secr_yangiliklar");
+    const footer = document.getElementById("footer");
+    const Admin_panel = document.getElementById("Admin_panel");
 
-    Admin_panel.classList.remove("d-none");
-    Admin_panel.style.display = "block";
+    if (nav_menu) nav_menu.style.display = "none";
+    if (header) header.style.display = "none";
+    if (secr_button) secr_button.style.display = "none";
+    if (section_card) section_card.style.display = "none";
+    if (secr_yangiliklar) secr_yangiliklar.style.display = "none";
+    if (footer) footer.style.display = "none";
 
-    // Modalni yashirish
+    if (Admin_panel) {
+      Admin_panel.classList.remove("d-none");
+      Admin_panel.style.display = "block";
+    }
+
     modal.style.display = "none";
   } else {
     Toastify({
-      text: "parol yoki kod xato",
+      text: "Parol yoki kod noto'g'ri",
       duration: 3000,
       style: {
         background: "green",
       },
     }).showToast();
 
-    // Modalni yashirish
     modal.style.display = "none";
     console.log("Kirish noto'g'ri!");
   }
@@ -166,6 +174,10 @@ const newanime = () => {
           background: "rgb(109, 4, 4)",
         },
       }).showToast();
+      data.value = "";
+      title.value = "";
+      img.value = "";
+      textares.value = "";
     })
     .catch((error) => {
       console.error("Yangi anime qo'shishda xatolik:", error);
@@ -178,3 +190,17 @@ const newanime = () => {
       }).showToast();
     });
 };
+// const anime_list = document.getElementsByClassName("anime_list")[0];
+// const respons_block = () => {
+//   anime_list.style.display = "block";
+//   const renderLogout = document.getElementById("renderlogout");
+
+//   if (renderLogout) {
+//     renderLogout.innerHTML = "";
+//     console.log("salom");
+//   } else {
+//     console.error("renderlogout not found");
+//   }
+// };
+
+// respons_block();

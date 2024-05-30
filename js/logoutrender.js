@@ -1,5 +1,6 @@
 const renderlogout = document.getElementById("renderlogout");
 const top_sales = document.getElementById("top_sales");
+const page2 = document.getElementById("page2");
 
 const renderLogaut = (id) => {
   axios
@@ -50,3 +51,23 @@ const renderLogaut = (id) => {
 };
 
 renderLogaut();
+const next_page = () => {
+  axios
+    .get("https://d90acc4e338622f6.mokky.dev/card")
+    .then((response) => {
+      const page = response.data;
+      console.log(page);
+    })
+    .catch((error) => {
+      console.error(error);
+      Toastify({
+        text: "Serverdan ma'lumot olishda xatolik yuz berdi",
+        duration: 3000,
+        style: {
+          background: "red",
+        },
+      }).showToast();
+    });
+};
+
+next_page2();
