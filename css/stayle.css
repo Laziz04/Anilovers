@@ -91,6 +91,20 @@ li {
   background: #f29824;
   color: white;
 }
+
+.button1 {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.648);
+  border-radius: 10px;
+  border: 2px solid #f29824;
+  color: #f29824;
+}
+
+.button1:hover {
+  background: #f29824;
+  color: white;
+}
 .section_card {
   position: relative;
   max-width: 200px !important;
@@ -238,7 +252,7 @@ button i {
 .conta {
   position: relative;
   --size-button: 40px;
-  color: rgb(241, 168, 23);
+  color: colips;
 }
 
 .input {

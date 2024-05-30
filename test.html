@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* CSS for active and inactive states */
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links li a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px 20px;
+    }
+
+    .nav-links li a:hover {
+      background-color: #333333;
+    }
+
+    .nav-links li.active a {
+      background-color: #555555;
+    }
+
+    .nav-links li a i {
+      margin-right: 10px;
+    }
+
+    .nav-links li a span {
+      vertical-align: middle;
+    }
+
+    .log_out {
+      margin-top: auto;
+    }
+  </style>
+  <body>
+    <ul class="nav-links">
+      <li class="active">
+        <a href="#">
+          <i class="fa-solid fa-table-cells"></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-box-archive"></i>
+          <span class="links_name">Yangi anime qo'shish</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-list"></i>
+          <span class="links_name">Order list</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-book"></i>
+          <span class="links_name">Total order</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-regular fa-user"></i>
+          <span class="links_name">Team</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-regular fa-message"></i>
+          <span class="links_name">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-regular fa-heart"></i>
+          <span class="links_name">Favrorites</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-gear"></i>
+          <span class="links_name">Setting</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name" onclick="log_out()">Log out</span>
+        </a>
+      </li>
+    </ul>
+    <script>
+      let navLinks = document.querySelectorAll(".nav-links li");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.forEach((item) => item.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -92,4 +92,25 @@
     width: 300px !important;
     margin-top: 10px;
   }
+
+  .logren_img {
+    width: 80px !important;
+    height: 110px !important;
+  }
+  .logren_title {
+    font-size: 14px !important;
+  }
+  .logren_subtitle {
+    font-size: 13px !important;
+  }
+  .recent-sales {
+    max-width: 302px !important;
+  }
+  .top-sales {
+    max-width: 302px !important;
+  }
+  .modal {
+    transition: top 0.3s ease;
+    top: calc(50% - 550px) !important;
+  }
 }
