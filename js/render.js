@@ -7,7 +7,7 @@ const render = () => {
       console.log(res.data);
       const bestcard = res.data;
 
-      row.innerHTML = ""; // InnerHTML ni tozalash
+      row.innerHTML = "";
 
       bestcard.forEach((item) => {
         row.innerHTML += `
@@ -20,7 +20,7 @@ const render = () => {
               <div class="content">
                 <h4 class="content_title">${item.name}</h4>
                 <div class="des">
-                  <p class="content_subtitle">${item.desc}</p>
+                  <p class="content_subtitle">Janri : ${item.desc}</p>
                   <div class="d-flex align-items-center justify-content-between">
                     <a style="text-decoration: none;" href="./kirish.html">
                       <button class="btton text-white d-flex align-items-center content_button">

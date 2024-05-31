@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>𝙰𝚗𝚒𝚕𝚘𝚟𝚎𝚛𝚜</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -45,7 +44,6 @@
     <link rel="stylesheet" href="./css/admin.css" />
     <link rel="stylesheet" href="./css/html.css" />
   </head>
-
   <body class="dark-mode bascgorng">
     <!-- Navbar -->
     <nav id="nav_menu" class="navbar navbar-expand-lg mt-3">
@@ -60,6 +58,7 @@
             />
           </a>
           <i
+            style="cursor: pointer"
             onclick="openAdmin()"
             data-bs-toggle="modal"
             data-bs-target="#adminPanel"
@@ -88,7 +87,11 @@
               </a>
             </li>
           </ul>
-          <div class="d-flex align-items-center gap-3" id="hr">
+          <div
+            style="flex-wrap: wrap"
+            class="d-flex align-items-center gap-3"
+            id="hr"
+          >
             <div class="d-flex gap-3">
               <li class="nav-item">
                 <a
@@ -141,7 +144,7 @@
 
     <!-- anime_filter -->
 
-    <section id="secr_button" class="container">
+    <!-- <section id="secr_button" class="container">
       <div
         style="flex-wrap: wrap"
         class="d-flex align-items-end justify-content-between"
@@ -163,15 +166,9 @@
           <div class="d-none d-sm-block col-xl-3 col-lg-3 col-md-4 col-4">
             <button class="Categori_button text-center">Ongoing</button>
           </div>
-          <button
-            class="Categori_but ms-2 text-center col-xl-3 col-lg-3 col-md-4 col-4"
-          >
-            Barchasi
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- sedction_caard -->
 
@@ -180,19 +177,20 @@
     </section>
 
     <!-- next_page -->
-
-    <div style="font-size: 20px; margin-top: 40px" class="container">
-      <div class="d-flex justify-content-center">
-        <div class="d-flex align-items-center gap-3">
-          <i style="cursor: pointer" class="fa-solid fa-caret-left"></i>
+    <section class="container" id="next_page">
+      <div style="font-size: 20px; margin-top: 40px" class="container">
+        <div class="d-flex justify-content-center">
           <div class="d-flex align-items-center gap-3">
-            <a href="./index.html"> <span onclick="next_page1()">1</span></a>
-            <a href="./page3.html"><span onclick="next_page2()">2</span></a>
+            <i style="cursor: pointer" class="fa-solid fa-caret-left"></i>
+            <div class="d-flex align-items-center gap-3">
+              <a href="./index.html"> <span onclick="next_page1()">1</span></a>
+              <a href="#"><span onclick="next_page2()">2</span></a>
+            </div>
+            <i style="cursor: pointer" class="fa-solid fa-caret-right"></i>
           </div>
-          <i style="cursor: pointer" class="fa-solid fa-caret-right"></i>
         </div>
       </div>
-    </div>
+    </section>
     <!-- section_anime yangiliklar -->
 
     <section id="secr_yangiliklar" class="container">
@@ -294,7 +292,6 @@
     </footer>
 
     <!-- modal_admin panel -->
-
     <div
       class="modal fade"
       id="adminPanel"
@@ -309,7 +306,13 @@
               <form class="login">
                 <input type="text" id="gmail" placeholder="Username" />
                 <input type="password" id="password" placeholder="Password" />
-                <button type="button" onclick="closeModal()">Save</button>
+                <a
+                  href="#"
+                  class="button text-center"
+                  id="login_pagehtml"
+                  onclick="closeModal()"
+                  >Save</a
+                >
               </form>
             </div>
           </div>
@@ -318,178 +321,6 @@
     </div>
 
     <!--_________________________________________Admin_panel_______________________________________________________________ -->
-
-    <div class="adminPanel d-none" id="Admin_panel">
-      <div class="sidebar">
-        <div class="logo-details">
-          <i class="bx bxl-c-plus-plus" style="color: #ffffff"></i>
-          <span class="logo_name">CodingLab</span>
-        </div>
-        <ul class="nav-links">
-          <li class="active">
-            <a href="#">
-              <i class="fa-solid fa-table-cells"></i>
-              <span class="links_name">Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-box-archive"></i>
-              <span class="links_name" onclick="newanime()">New anime</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-list"></i>
-              <span class="links_name">Order list</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-book"></i>
-              <span class="links_name">Total order</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-regular fa-user"></i>
-              <span class="links_name">Team</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-regular fa-message"></i>
-              <span class="links_name">Messages</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-regular fa-heart"></i>
-              <span class="links_name">Favrorites</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-gear"></i>
-              <span class="links_name">Setting</span>
-            </a>
-          </li>
-          <li class="log_out">
-            <a href="#">
-              <i class="bx bx-log-out"></i>
-              <span class="links_name" onclick="log_out()">Log out</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <section class="home-section">
-        <nav>
-          <div class="sidebar-button">
-            <i
-              class="fa-solid fa-bars-staggered sidebarBtn"
-              style="color: black; font-size: 20px; cursor: pointer"
-            ></i>
-            <i
-              id="edit_respons"
-              class="fa-solid fa-user-pen"
-              onclick="respons_block()"
-              style="
-                color: #74c0fc;
-                font-size: 18px;
-                margin-left: 10px;
-                padding-right: 5px;
-                cursor: pointer;
-              "
-            ></i>
-            <i
-              id="anime_list"
-              class="fa-solid fa-list d-none"
-              style="
-                color: #74c0fc;
-                font-size: 18px;
-                margin-left: 10px;
-                padding-right: 5px;
-                cursor: pointer;
-              "
-            ></i>
-            <span class="dashboard">Dashboard</span>
-          </div>
-        </nav>
-
-        <div class="home-content contaniner">
-          <div
-            style="margin-top: -10px; margin-left: -10px"
-            class="row"
-            id="nesrf"
-          >
-            <div
-              class="recent-sales mt-2 col-xl-6 col-lg-5 col-md-6 col-sm-5 col-12 box text-dark p-4"
-            >
-              <div class="mostly-customized-scrollbar" id="renderlogout"></div>
-            </div>
-            <div
-              class="mt-2 col-xl-5 col-lg-5 col-md-4 col-sm-4 top-sales box"
-              id="top_sales"
-            >
-              <form class="text-dark form_sales">
-                <label for="data" class="colips">data</label>
-                <br />
-                <input type="number" placeholder="Yili.." id="data" />
-                <br />
-                <label for="name" class="colips">name</label>
-                <br />
-                <input type="text" placeholder="Nomi" id="name" />
-                <br />
-                <label for="img" class="colips">img</label>
-                <br />
-                <input
-                  type=""
-                  placeholder="Rasmni kiriting [ URL ]..."
-                  id="img"
-                />
-                <br />
-                <div class="mt-3 custom-file-container w-100">
-                  <label for="fileInput" class="p-0 m-0 custom-file-label"
-                    >Rasmni tanlang</label
-                  >
-                  <input
-                    class="custom-file-input"
-                    type="file"
-                    id="fileInput"
-                    accept="image/*"
-                  />
-                </div>
-
-                <div id="preview" class="mt-4"></div>
-
-                <label for="Youtube iframe" class="colips"
-                  >Youtube iframe</label
-                >
-                <br />
-                <input
-                  type="Iframe"
-                  placeholder="inter your youtube iframe..."
-                  id="iframe"
-                />
-                <br />
-
-                <label for="desc">content</label>
-                <textarea
-                  class="form-control"
-                  name=""
-                  id="textares"
-                  rows="5"
-                ></textarea>
-
-                <div class="button1" onclick="newanime()">Qo'shish</div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- admin_panel_modal _edit-modal -->
 
     <div
       class="modal fade"
@@ -584,7 +415,6 @@
     <!-- js_fayl _links -->
 
     <script src="./js/render.js"></script>
-    <script src="./js/logoutrender.js"></script>
     <script src="./js/darkmod.js"></script>
     <script src="./js/adminPanel.js"></script>
     <script src="./js/search.js"></script>

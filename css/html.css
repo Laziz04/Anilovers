@@ -1,4 +1,4 @@
-.nav-links li a:hover {
+/* .nav-links li a:hover {
   background-color: #150060;
 }
 
@@ -12,7 +12,7 @@
 
 .nav-links li a span {
   vertical-align: middle;
-}
+} */
 
 .log_out {
   margin-top: auto;
@@ -33,7 +33,7 @@
 }
 
 .dark-mode .nav-link {
-  color: #fff !important;
+  color: #000000 !important;
 }
 
 .dark-mode .ionicon {
@@ -64,11 +64,11 @@
   transform: translateY(-5px);
 }
 
-.modal.fade.show {
+/* .modal.fade.show {
   display: block;
   opacity: 1;
   transform: translate(0, 220px);
-}
+} */
 
 /* Animation for image preview */
 .img-container {
@@ -149,7 +149,7 @@
 }
 
 .modal-dialog {
-  transform: translate(0, -10%);
+  transform: translate(0, 700%);
 }
 
 .modal-content {
