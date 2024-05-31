@@ -140,7 +140,7 @@
 
 .modal {
   transition: top 0.3s ease;
-  top: calc(50% - 600px);
+  top: calc(50% - 400px);
 }
 
 .modal.fade.show {

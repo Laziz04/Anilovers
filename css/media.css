@@ -69,6 +69,6 @@
 
   .modal {
     transition: top 0.3s ease;
-    top: calc(50% - 550px) !important;
+    top: calc(50% - 250px) !important;
   }
 }
