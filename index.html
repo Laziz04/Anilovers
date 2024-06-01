@@ -62,7 +62,7 @@
             onclick="openAdmin()"
             data-bs-toggle="modal"
             data-bs-target="#adminPanel"
-            class="fa-regular fa-user"
+            class="fa-regular fa-user text-white"
           ></i>
         </div>
         <button
@@ -95,21 +95,13 @@
             <div class="d-flex gap-3">
               <li class="nav-item">
                 <a
-                  class="cnav-link active d-flex gap-2 align-items-center"
+                  class="text-white cnav-link active d-flex gap-2 align-items-center"
                   aria-current="page"
                   href="#"
                   ><i class="fa-solid fa-heart" style="color: #ffffff"></i>
                   Saralangan</a
                 >
               </li>
-              <div id="dark-mode-toggle" class="ms-auto">
-                <i
-                  style="cursor: pointer"
-                  id="moon-icon"
-                  class="fas fa-moon"
-                ></i>
-                <i id="sun-icon" class="fas fa-sun" style="display: none"></i>
-              </div>
             </div>
             <!-- input -->
             <div class="conta">
@@ -123,7 +115,7 @@
               />
               <div id="input_div" class="crate d-none"></div>
               <div class="icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
               </div>
             </div>
             <button id="form-open" class="nav_button text-white">
@@ -173,7 +165,9 @@
     <!-- sedction_caard -->
 
     <section id="section_card" style="margin-top: 50px" class="container mb-5">
-      <div class="row best" id="row"></div>
+      <div class="d-flex justify-content-center">
+        <div class="row best" id="row"></div>
+      </div>
     </section>
 
     <!-- next_page -->
@@ -415,6 +409,7 @@
     <!-- js_fayl _links -->
 
     <script src="./js/render.js"></script>
+    <script src="./js/openAnime.js"></script>
     <script src="./js/darkmod.js"></script>
     <script src="./js/adminPanel.js"></script>
     <script src="./js/search.js"></script>

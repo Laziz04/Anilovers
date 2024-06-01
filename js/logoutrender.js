@@ -1,12 +1,20 @@
 const renderLogaut = document.getElementById("renderlogout");
+const loading = `
+<button class="" type="button" disabled>
+      <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+      <span role="status">Loading...</span>
+    </button>
+`;
 
 const renderLogautw = () => {
   axios
     .get("https://d90acc4e338622f6.mokky.dev/card")
     .then((response) => {
       const data = response.data;
+
       data.map((item, index) => {
         renderLogaut.innerHTML += `
+
           <tr>
             <td>
               <img

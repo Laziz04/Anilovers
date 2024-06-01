@@ -1,44 +1,32 @@
 .log_out {
   margin-top: auto;
 }
-/* General dark mode styles */
 .dark-mode {
-  background-color: rgb(23, 42, 46);
-  color: #fff;
+  background-color: #121212;
+  color: #ffffff;
 }
 
 .dark-mode .navbar {
-  background-color: rgb(23, 42, 46);
-  color: #fff;
+  background-color: #121212;
 }
 
-.dark-mode .navbar-toggler {
-  border-color: #fff;
-}
-
-.dark-mode .nav-link {
-  color: #000000 !important;
-}
-
-.dark-mode .ionicon {
-  color: #fff;
+.dark-mode .navbar .nav-link {
+  color: #ffffff;
 }
 
 .dark-mode .footer {
-  background-color: rgb(23, 42, 46);
-  color: #fff;
+  background-color: #131313;
+  color: #ffffff;
 }
 
-.dark-mode .links a {
-  color: #fff;
+.dark-mode .footer a {
+  color: #ffffff;
 }
-@media (max-width: 768px) {
-  .dark-mode .navbar-toggler {
-    background-color: #333;
-    color: #fff;
-  }
+
+.dark-mode .fa-moon,
+.dark-mode .fa-sun {
+  color: #ffffff;
 }
-/* header_icon_hover_animation */
 
 .animatsiya {
   cursor: pointer;
@@ -46,4 +34,37 @@
 }
 .animatsiya:hover {
   transform: translateY(-5px);
+}
+
+@keyframes spin-moon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sun ikoni uchun animatsiya */
+@keyframes spin-sun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Moon va Sun ikonlarga animatsiya qo'shish */
+.moon-icon.spin {
+  animation: spin-moon 2s linear infinite;
+}
+
+.sun-icon.spin {
+  animation: spin-sun 2s linear infinite;
+}
+
+/* Sun ikonining animatsiyasini o'chirish */
+.sun-icon {
+  transition: opacity 0.5s;
 }

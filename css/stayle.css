@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: black;
 }
 
 a {
@@ -106,7 +107,11 @@ li {
 }
 .section_card {
   position: relative;
-  max-width: 200px !important;
+  max-width: 300px !important;
+  border-radius: 10px;
+}
+
+.section_card:hover {
 }
 
 .section_card img {
@@ -118,6 +123,9 @@ li {
 .section_card:hover img {
   transform: scale(1.1);
   filter: blur(2px);
+  -webkit-box-shadow: 0px -5px 23px 1px rgba(231, 242, 250, 0.2);
+  -moz-box-shadow: 0px -5px 23px 1px rgba(231, 242, 250, 0.2);
+  box-shadow: 0px -5px 23px 1px rgba(231, 242, 250, 0.2);
 }
 
 .section_card .content {
@@ -377,7 +385,7 @@ span {
 }
 
 .bascgorng {
-  background-color: #95bdfe;
+  background-color: #dadadae1;
   width: 100%;
 }
 
@@ -476,3 +484,5 @@ span {
   color: white;
   transition: 0.3s;
 }
+
+/* section_cards */
