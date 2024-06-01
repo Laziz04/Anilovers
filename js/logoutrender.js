@@ -34,8 +34,10 @@ const renderLogautw = () => {
               </span>
             </td>
             <td class="text-end">
-              <button onclick="editAnime(${item.id})" class="btn btn-sm btn-neutral">View</button>
-              <i style="cursor: pointer;" onclick="delet(${item.id})" class="fa-solid fa-trash-arrow-up" style="color: #c42317;"></i>
+            <button onclick="editAnime(${item.id})" class="btn btn-sm btn-neutral">View</button>
+            <button onclick="delet(${item.id})" class="btn btn-sm btn-neutral"><i class="fa-solid fa-trash-arrow-up" style="color: #c42317;"></i></button>
+                        </td>
+    
               </td>
           </tr>
         `;

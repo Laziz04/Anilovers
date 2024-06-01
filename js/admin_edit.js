@@ -2,6 +2,7 @@ const modalData = document.getElementById("modalData");
 const modalName = document.getElementById("modalTitle");
 const modalImg = document.getElementById("modalImg");
 const modalDesc = document.getElementById("modalDesc");
+const searchAnilovers = document.getElementById("searchAnilovers");
 let lastId = 0;
 
 const editmodalAnime = new bootstrap.Modal("#editmodalAnime", {
@@ -141,3 +142,62 @@ const newanime = () => {
       }).showToast();
     });
 };
+
+searchAnilovers.addEventListener("input", (e) => {
+  const searchanime = e.target.value;
+  axios
+    .get(`https://d90acc4e338622f6.mokky.dev/card?name=*${searchanime}`)
+    .then((anj) => {
+      const bestcard = anj.data;
+      if (searchanime.length > 0) {
+        renderLogaut.innerHTML = "";
+        bestcard.forEach((item) => {
+          renderLogaut.innerHTML += `
+          <tr>
+          <td>
+            <img
+              alt="..."
+              src="${item.img}"
+              class="avatar avatar-sm rounded-circle me-2"
+            />
+            <a class="text-heading font-semibold" href="./kirish.html">
+              ${item.name}
+            </a>
+          </td>
+          <td>${item.data}</td>
+          <td>
+            <img
+              alt="..."
+              src="${item.logo}"
+              class="avatar avatar-xs rounded-circle me-2"
+            />
+            <a class="text-heading font-semibold" href="#">
+              Anilovers
+            </a>
+          </td>
+          <td>
+              ${item.desc}
+            </span>
+          </td>
+          <td class="text-end">
+            <button onclick="editAnime(${item.id})" class="btn btn-sm btn-neutral">View</button>
+            <button onclick="delet(${item.id})" class="btn btn-sm btn-neutral"><i class="fa-solid fa-trash-arrow-up" style="color: #c42317;"></i></button>
+                        </td>
+        </tr>
+      `;
+        });
+      } else {
+        renderLogautw();
+      }
+    })
+    .catch((e) => {
+      console.error(e);
+      Toastify({
+        text: "Xatolik sodir bo'ldi. Qayta urinib ko'ring.",
+        duration: 3000,
+        style: {
+          background: "rgb(109, 4, 4)",
+        },
+      }).showToast();
+    });
+});
