@@ -1,57 +1,4 @@
-/* media */
-@media screen and (max-width: 1285px) {
-  .ifrg {
-    width: 700px !important;
-    height: 400px;
-    border-radius: 20px;
-  }
-}
-
-@media screen and (max-width: 1192px) {
-  .ifrg {
-    width: 600px !important;
-    height: 400px;
-    border-radius: 20px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .ifrg {
-    width: 700px !important;
-    height: 400px;
-    border-radius: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .ifrg {
-    width: 500px !important;
-    height: 400px;
-    border-radius: 20px;
-  }
-}
-
-@media screen and (max-width: 556px) {
-  .ifrg {
-    width: 480px !important;
-    height: 400px;
-    border-radius: 20px;
-  }
-}
-@media screen and (max-width: 535px) {
-  .ifrg {
-    width: 400px !important;
-    height: 400px;
-    border-radius: 20px;
-  }
-}
-
 @media screen and (max-width: 400px) {
-  .ifrg {
-    width: 270px !important;
-    height: 400px;
-    border-radius: 20px;
-  }
   .Categori_but {
     width: 170px;
     margin-left: 18px;
@@ -70,5 +17,34 @@
   .modal {
     transition: top 0.3s ease;
     top: calc(50% - 250px) !important;
+  }
+  .render_card_text {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: #fff;
+    transition: bottom 0.3s ease;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(2px);
+    visibility: visible;
+  }
+  .render_card_text h4,
+  .render_card_text p,
+  .render_card_text button {
+    font-size: 14px;
+  }
+  .body {
+    position: relative;
+    height: 40vh !important;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
   }
 }

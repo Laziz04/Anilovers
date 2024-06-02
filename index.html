@@ -8,18 +8,14 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="shortcut icon" type="x-icon" href="./logo.png" />
-
     <!-- Bootstrap link-->
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <!-- sdn -->
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -27,23 +23,58 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- toastfy link -->
-
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
-
     <!-- css-link -->
-
     <link rel="stylesheet" href="./css/stayle.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/admin.css" />
     <link rel="stylesheet" href="./css/html.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
+  <style>
+    .body {
+      position: relative;
+      height: 55vh;
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      border-radius: 20px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+    }
+
+    /* style.css */
+    .swiper-slide img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 20px;
+    }
+  </style>
   <body class="dark-mode bascgorng">
     <!-- Navbar -->
     <nav id="nav_menu" class="navbar navbar-expand-lg mt-3">
@@ -132,35 +163,70 @@
 
     <!-- header -->
 
-    <header id="header" class="container"></header>
+    <header
+      style="margin-top: 30px; margin-bottom: 50px"
+      id="header"
+      class="container"
+    >
+      <div class="body">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://images.alphacoders.com/134/1344303.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://i.pinimg.com/originals/ff/6e/b2/ff6eb2820802df2af1e20c85841eb907.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://mashlemerch.com/wp-content/uploads/2024/01/Mashle-Merch-Store-Banner.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://i.ytimg.com/vi/vSJy2Gzu_0U/maxresdefault.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://a-static.besthdwallpaper.com/solo-leveling-sung-jin-woo-shadow-monsters-wallpaper-3440x1440-88313_15.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/09/Tokyo-Revengers.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </header>
 
     <!-- anime_filter -->
 
-    <!-- <section id="secr_button" class="container">
-      <div
-        style="flex-wrap: wrap"
-        class="d-flex align-items-end justify-content-between"
-      >
-        <div class="row">
-          <div class="col-xl-3 col-lg-3 col-md-4 col-4">
-            <button class="Categori_button text-center">
-              Anime Yangiliklar
-            </button>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-4 col-4">
-            <button onclick="news()" class="Categori_button text-center">
-              Yangi animelar
-            </button>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-4 col-4">
-            <button class="Categori_button text-center">Anime filimlar</button>
-          </div>
-          <div class="d-none d-sm-block col-xl-3 col-lg-3 col-md-4 col-4">
-            <button class="Categori_button text-center">Ongoing</button>
-          </div>
-        </div>
+    <section class="container">
+      <div style="flex-wrap: wrap" class="d-flex gap-3">
+        <button class="button">animelar</button>
+        <button class="button">animelar</button>
+        <button class="button">animelar</button>
+        <button class="button">animelar</button>
+        <button class="button">animelar</button>
+        <button class="button">animelar</button>
       </div>
-    </section> -->
+    </section>
+
+    <!-- animation _seection_slider  -->
 
     <!-- sedction_caard -->
 
@@ -186,41 +252,6 @@
       </div>
     </section>
     <!-- section_anime yangiliklar -->
-
-    <section id="secr_yangiliklar" class="container">
-      <div style="margin-top: 100px" class="row">
-        <div class="text-white col-xl-4 col-lg-4 col-12">
-          <img src="./img/Anilovers logo (4).png" alt="" width="260px" />
-          <!-- <h4 class="new_title">Anime yangiliklar</h4> -->
-          <p class="neew_subttile">
-            <b>Bahor 2024 :</b> Amediatv.uz da chiqishi kutilayotgan Anime lar.
-            Haqida malumotlar
-          </p>
-          <h5>Animelar royxati</h5>
-          <div class="borde">Kayju 8-raqam</div>
-          <div class="borde">Solo Leveling <span>[17+]</span></div>
-          <div class="borde">qayta tugʻilishim <span>[17+]</span></div>
-          <div class="borde">Shamolni bo'ysindirish <span>[16+]</span></div>
-          <div class="borde">
-            shahzoda sifatida qayta tugʻildim <span>[16+]</span>
-          </div>
-          <div class="borde">Yangi darvoza <span>[17+]</span></div>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-12">
-          <div class="iferam_vedio">
-            <iframe
-              class="ifrg"
-              src="https://www.youtube.com/embed/7szgmqHqc54"
-              title="Bahor 2024: Amediatv.uz da chiqishi kutilayotgan Anime lar."
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Footer -->
     <footer id="footer" class="footer nest">
@@ -378,6 +409,25 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <!-- toastfy-js_link -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
@@ -409,6 +459,7 @@
     <!-- js_fayl _links -->
 
     <script src="./js/render.js"></script>
+    <script src="./js/slder_render.js"></script>
     <script src="./js/openAnime.js"></script>
     <script src="./js/darkmod.js"></script>
     <script src="./js/adminPanel.js"></script>
