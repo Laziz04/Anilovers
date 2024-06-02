@@ -5,6 +5,10 @@
     height: 400px;
     border-radius: 20px;
   }
+  #section_card {
+    padding: 10px 0px 0 0px;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1192px) {
@@ -28,6 +32,13 @@
     width: 500px !important;
     height: 400px;
     border-radius: 20px;
+  }
+  .render_card {
+    position: relative;
+    overflow: hidden;
+    width: 175px;
+    /* height: 300px; */
+    border-radius: 10px;
   }
 }
 
@@ -70,5 +81,18 @@
   .modal {
     transition: top 0.3s ease;
     top: calc(50% - 250px) !important;
+  }
+
+  .render_card {
+    position: relative;
+    overflow: hidden;
+    width: 155px;
+    /* height: 300px; */
+    border-radius: 10px;
+  }
+
+  #section_card {
+    padding: 10px 0px 0 0px;
+    margin-top: 20px;
   }
 }
