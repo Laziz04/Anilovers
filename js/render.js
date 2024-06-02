@@ -20,7 +20,7 @@ const render = () => {
                 <div class="content">
                     <h4 class="content_title">${item.name}</h4>
                     <div class="des">
-                        <p class="content_subtitle text-white">Janri : ${item.desc}</p>
+                        <p class="content_subtitle">Janri : ${item.desc}</p>
                         <div class="d-flex align-items-center justify-content-between">
                             <a onclick="openAnime(${item.id})" id="hrfd-${item.id}" style="text-decoration: none;" href="#">
                                 <button class="btton text-white d-flex align-items-center content_button">
@@ -31,9 +31,7 @@ const render = () => {
                             <i id="heart-${item.id}" onclick="basket(${item.id})" class="animatsiya fa-solid fa-heart psd" style="color: #ffffff"></i>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>`;
+                </div>`;
       });
     })
     .catch((err) => {
@@ -101,7 +99,8 @@ navLinks.forEach((link) => {
   });
 });
 
-//animation_section_slider
+// slider
+
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
