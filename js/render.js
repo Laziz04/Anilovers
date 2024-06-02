@@ -36,10 +36,8 @@ const render = () => {
                   <i class="me-3 fa-solid fa-play" style="color: #ffffff"></i>
                 </button>
               </a>
-              <i
-                class="animatsiya fa-solid fa-heart"
-                style="color: #ffffff"
-              ></i>
+              <i id="heart-${item.id}" onclick="basket(${item.id})" class="animatsiya fa-solid fa-heart psd" style="color: #ffffff"></i>
+
             </div>
            </div>
           </div>

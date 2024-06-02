@@ -159,6 +159,14 @@ button p {
   color: var(--primary-color);
 }
 
+.slidet_title {
+  font: size 5px !important;
+}
+
+.slider_subtitle {
+  font: size 4px !important;
+}
+
 .data:hover {
   color: #f09c42;
 
@@ -453,3 +461,71 @@ span {
 }
 
 /* section_cards */
+
+/* slider_style */
+
+.merdf {
+  margin-left: -40px;
+  margin-top: -550px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.slidet_title {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.slidet_title:hover {
+  color: #f29824;
+  transition: 0.3s;
+}
+
+.sider_subtitle {
+  color: #fff;
+  display: -webkit-box;
+  font-size: 16px;
+  height: 100px;
+  line-height: 25px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+
+.img {
+  width: 250px;
+}
+
+.opasty_carsel_img {
+  width: 100%;
+}
+
+.data {
+  color: #f09c42;
+}
+
+.korish {
+  padding: 3px;
+  border-radius: 6px;
+  border: 2px solid rgb(0, 183, 255);
+  color: rgb(0, 183, 255);
+  background: transparent;
+  width: 85px;
+  font-size: 16px;
+}
+.korish:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.korish i {
+  font-size: 10px;
+}
+
+.korish i:hover {
+  transform: translateX(10px);
+  transition: 0.3s;
+}

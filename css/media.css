@@ -5,6 +5,12 @@
     height: 400px;
     border-radius: 20px;
   }
+  .merdf {
+    margin-top: 150px !important;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+  }
 }
 
 @media screen and (max-width: 1192px) {
@@ -13,6 +19,22 @@
     height: 400px;
     border-radius: 20px;
   }
+  .img {
+    width: 200px;
+  }
+
+  .sider_subtitle {
+    color: #fff;
+    display: -webkit-box;
+    font-size: 16px;
+    height: 100px;
+    line-height: 25px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -20,6 +42,24 @@
     width: 700px !important;
     height: 400px;
     border-radius: 20px;
+  }
+  .sider_subtitle {
+    color: #fff;
+    display: -webkit-box;
+    font-size: 14px;
+    height: 100px;
+    line-height: 25px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+  }
+
+  .slidet_title {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
   }
 }
 
@@ -40,6 +80,33 @@
     padding: 10px 60px 0 60px;
     margin-top: 20px;
   }
+
+  .sider_subtitle {
+    color: #fff;
+    display: -webkit-box;
+    font-size: 14px;
+    height: 100px;
+    line-height: 24px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+  }
+
+  .slidet_title {
+    font-size: 27px;
+    color: #fff;
+    font-weight: 800;
+  }
+  .header {
+    height: 60vh !important;
+  }
+  .opasty_carsel_img {
+    height: 60vh;
+    object-fit: initial;
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 556px) {
@@ -51,6 +118,33 @@
   #section_card {
     padding: 10px 40px 0 40px;
     margin-top: 20px;
+  }
+  .sider_subtitle {
+    color: #fff;
+    display: -webkit-box;
+    font-size: 14px;
+    height: 100px;
+    line-height: 24px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    height: 30px !important;
+  }
+
+  .slidet_title {
+    font-size: 27px;
+    color: #fff;
+    font-weight: 800;
+  }
+  .header {
+    height: 50vh !important;
+  }
+  .opasty_carsel_img {
+    height: 50vh;
+    object-fit: initial;
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 535px) {
@@ -103,11 +197,59 @@
   .render_card_text h4,
   .render_card_text p,
   .render_card_text button {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   #section_card {
     padding: 1px 1px 1px 1px !important;
     margin-top: 2px !important;
+  }
+  .header {
+    height: 50vh !important;
+  }
+  .opasty_carsel_img {
+    height: 50vh;
+    object-fit: initial;
+    width: 420px !important;
+  }
+  .sider_subtitle {
+    color: #fff;
+    display: -webkit-box;
+    font-size: 14px;
+    height: 100px;
+    line-height: 24px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    height: 30px !important;
+  }
+
+  .slidet_title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+  }
+
+  .data {
+    font-size: 12px;
+  }
+
+  .korish i {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  .korish {
+    padding: 2px;
+    border-radius: 6px;
+    border: 2px solid rgb(0, 183, 255);
+    color: rgb(0, 183, 255);
+    background: transparent;
+    width: 80px;
+    font-size: 14px !important;
   }
 }
