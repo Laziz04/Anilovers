@@ -1,33 +1,3 @@
-.log_out {
-  margin-top: auto;
-}
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.dark-mode .navbar {
-  background-color: #121212;
-}
-
-.dark-mode .navbar .nav-link {
-  color: #ffffff;
-}
-
-.dark-mode .footer {
-  background-color: #131313;
-  color: #ffffff;
-}
-
-.dark-mode .footer a {
-  color: #ffffff;
-}
-
-.dark-mode .fa-moon,
-.dark-mode .fa-sun {
-  color: #ffffff;
-}
-
 .animatsiya {
   cursor: pointer;
   transition: transform 0.2s ease;

@@ -13,16 +13,20 @@ const render = () => {
         row.innerHTML += `
         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 d-flex justify-content-center">
         <div class="render_card">
-          <img
-            src="${item.img}"
-            alt=""
-            width="100%"
-            class=""
-            style="border-radius: 10px"
-          />
+        <a id="img_card" href="#">
+      
+        <img
+        src="${item.img}"
+        alt=""
+        width="100%"
+        class=""
+        style="border-radius: 10px"
+      />
+      </a>
           <div class="render_card_text">
             <h4>${item.name}</h4>
-            <p class="m-0 p-0">${item.desc}</p>
+            <div class="d-none d-lg-block">
+            <p class="m-0 p-0 text-white">${item.desc}</p>
             <div class="d-flex align-items-center justify-content-between">
               <a style="text-decoration: none" href="#">
                 <button
@@ -37,6 +41,7 @@ const render = () => {
                 style="color: #ffffff"
               ></i>
             </div>
+           </div>
           </div>
         </div>
       </div>`;

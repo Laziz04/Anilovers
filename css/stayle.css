@@ -87,14 +87,14 @@ li {
 /* section_rnder_card_style */
 
 #section_card {
-  padding: 10px 50px 0 120px;
+  padding: 10px 80px 0 70px !important;
   margin-top: 20px;
 }
 
 .render_card {
   position: relative;
   overflow: hidden;
-  max-width: 240px;
+  max-width: 230px;
   /* height: 300px; */
   border-radius: 10px;
   padding: 0;
@@ -352,7 +352,7 @@ span {
 }
 
 .bascgorng {
-  background-color: #dadadae1;
+  background-color: #dad9d9e1;
   width: 100%;
 }
 
