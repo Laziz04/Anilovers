@@ -11,8 +11,8 @@ const render = () => {
 
       bestcard.forEach((item) => {
         row.innerHTML += `
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6 d-flex justify-content-center  mt-3">
-        <div class="render_card p-3 ">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 d-flex justify-content-center">
+        <div class="render_card">
           <img
             src="${item.img}"
             alt=""
