@@ -8,7 +8,7 @@ function closeModal() {
   const gmailInput = document.getElementById("gmail").value;
   const passwordInput = document.getElementById("password").value;
 
-  if (gmailInput === " " && passwordInput === " ") {
+  if (gmailInput === "1234" && passwordInput === "1234") {
     window.location.href = "./login_page.html";
     Toastify({
       text: "Kirish muvaffaqiyatli",
