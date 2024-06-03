@@ -9,12 +9,12 @@ const render = () => {
 
       row.innerHTML = "";
 
-      bestcard.forEach((item) => {
+      bestcard.splice(0, 8).forEach((item) => {
         row.innerHTML += `
         <div class="mt-5 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
             <div class="section_card position-relative">
                 <div class="d-flex sdf w-100 align-items-center">
-                    <span class="spank">${item.data}</span>
+                    <span class="spank">${item.yil}</span>
                 </div>
                 <img src="${item.img}" alt="" width="100%"/>
                 <div class="content">
@@ -52,14 +52,18 @@ const basket = (itemId) => {
 render();
 
 // <!-- script _ siadbar Menu -->
-let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".sidebarBtn");
-sidebarBtn.onclick = function () {
+const sidebar = document.querySelector(".sidebar");
+const sidebarBtn = document.querySelector(".sidebarBtn");
+
+sidebarBtn.addEventListener("click", function () {
   sidebar.classList.toggle("active");
+
   if (sidebar.classList.contains("active")) {
     sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-  } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-};
+  } else {
+    sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+  }
+});
 
 // <!-- script input img -->
 

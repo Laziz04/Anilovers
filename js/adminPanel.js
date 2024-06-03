@@ -2,6 +2,7 @@ const editmodal = new bootstrap.Modal("#editmodal", {
   keyboard: false,
 });
 let lastId = 0;
+
 const login_pagehtml = document.getElementById("login_pagehtml");
 
 function closeModal() {
