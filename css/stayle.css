@@ -348,7 +348,7 @@ span {
 }
 
 .bascgorng {
-  background-color: #000000e1;
+  background: linear-gradient(90deg, #1c1b1b, #252516);
   width: 100%;
 }
 

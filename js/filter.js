@@ -197,7 +197,7 @@ const fetchAndDisplayCards = () => {
         </div>`;
         row.appendChild(card);
       });
-      startIndex += 7;
+      startIndex += 12;
     })
     .catch((err) => {
       console.log(err);
