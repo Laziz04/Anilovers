@@ -178,6 +178,9 @@
     <section class="container text-white">
       <div style="flex-wrap: wrap" class="d-flex gap-3 justify-content-between">
         <div style="flex-wrap: wrap" class="d-flex gap-2 align-items-center">
+          <button id="hamma" class="button active" onclick="hamma()">
+            Hamma anemelar
+          </button>
           <button id="newAnime" class="button" onclick="animeNews()">
             Yangi animelar
           </button>
@@ -185,12 +188,11 @@
           <button id="anifilim" class="button" onclick="animeFilim()">
             Anime filimlar
           </button>
-          <button id="endanime" class="button" onclick="endanime()">
-            Yakunlangan animelar
-          </button>
         </div>
         <div>
-          <button class="button">Barchasi</button>
+          <button id="barch" class="button" onclick="barchasi()">
+            Barchasi
+          </button>
         </div>
       </div>
     </section>
@@ -208,7 +210,11 @@
     <!-- next_page -->
     <section class="container" id="next_page">
       <div class="d-flex justify-content-center mt-5">
-        <button class="button mt-3" onclick="fetchAndDisplayCards()">
+        <button
+          id="koproq"
+          class="button mt-3"
+          onclick="fetchAndDisplayCards()"
+        >
           Koproq ko'rsatish
         </button>
       </div>
