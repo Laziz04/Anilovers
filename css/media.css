@@ -16,4 +16,7 @@
     position: relative;
     height: 40vh;
   }
+  #section_card {
+    margin-top: 70px !important;
+  }
 }

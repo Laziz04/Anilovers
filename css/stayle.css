@@ -58,16 +58,38 @@ li {
 /* all button style */
 
 .button {
-  padding: 8px 20px;
-  background: transparent;
-  border-radius: 10px;
-  border: 2px solid #f29824;
+  background: #ffffff00;
+  border: 1px solid #f29824;
+  border-radius: 6px;
   color: #f29824;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 15px;
+  width: auto;
+}
+.button_active {
+  padding: 8px 15px;
+  font-size: 14px;
+  background: #f29824;
+  border: 1px solid transparent;
+  color: #fff;
+  width: auto;
+  border-radius: 6px;
+}
+.button_active:hover {
+  color: #f29824;
+  border: 1px solid #f29824;
+  transition: 0.4s;
+  background: transparent;
+  width: auto;
 }
 
 .button:hover {
   background: #f29824;
   color: white;
+  transition: 0.4s;
+  width: auto;
 }
 
 .button1 {
@@ -77,11 +99,13 @@ li {
   border-radius: 10px;
   border: 2px solid #f29824;
   color: #f29824;
+  width: auto;
 }
 
 .button1:hover {
   background: #f29824;
   color: white;
+  width: auto;
 }
 
 /* section_rnder_card_style */
@@ -515,7 +539,7 @@ span {
 
 .body {
   position: relative;
-  height: 65vh;
+  height: 50vh;
 }
 
 .body {
