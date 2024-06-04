@@ -25,7 +25,7 @@ const animeNews = () => {
       row.innerHTML = "";
 
       animeList.forEach((anime) => {
-        if (anime.yil === "2024") {
+        if (anime.yil == "2024") {
           row.innerHTML += `
           <div class="mt-5 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
               <div class="section_card position-relative">
@@ -66,13 +66,13 @@ const animeFilim = () => {
   hammr.classList.remove("active");
 
   axios
-    .get("https://d90acc4e338622f6.mokky.dev/card")
+    .get("https://d90acc4e338622f6.mokky.dev/card?flim=flim")
     .then((response) => {
       const animeList = response.data;
       row.innerHTML = "";
 
       animeList.forEach((anime) => {
-        if (anime.film.length > 0) {
+        if (anime) {
           row.innerHTML += `
             <div class="mt-5 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
                 <div class="section_card position-relative">

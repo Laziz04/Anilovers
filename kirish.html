@@ -30,77 +30,76 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/stayle.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body class="kirish bascgorng">
     <!-- menu -->
-    <nav class="navbar navbar-expand-lg mt-3">
+    <nav id="nav_menu" class="navbar navbar-expand-lg mt-3">
       <div class="container">
-        <a
-          href="./index.html"
-          style="width: 190px"
-          class="navbar-brand p-0 m-0"
-          href="#"
-        >
-          <img
-            class="logo"
-            src="./img/Anilovers logo (4).png"
-            alt=""
-            width="100%"
-          />
-        </a>
+        <div class="d-flex gap-3 align-items-center">
+          <a style="width: 190px" class="navbar-brand p-0 m-0" href="./index.html">
+            <img
+              class="logo"
+              src="./img/Anilovers logo (4).png"
+              alt="Anilovers Logo"
+              width="100%"
+            />
+          </a>
+          <i
+            style="cursor: pointer"
+            onclick="openAdmin()"
+            data-bs-toggle="modal"
+            data-bs-target="#adminPanel"
+            class="fa-regular fa-user text-white"
+          ></i>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <i class="fa-solid fa-bars-staggered" style="color: #ffffff"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0"></ul>
-          <div class="d-flex align-items-center gap-3" id="hr">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"></a>
+            </li>
+          </ul>
+          <div
+            style="flex-wrap: wrap"
+            class="d-flex align-items-center gap-3"
+            id="hr"
+          >
             <div class="d-flex gap-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">link</a>
+                <a
+                  class="text-white cnav-link d-flex gap-2 align-items-center"
+                  aria-current="page"
+                  href="#"
+                  ><i class="fa-solid fa-heart" style="color: #ffffff"></i>
+                  Saralangan</a
+                >
               </li>
             </div>
             <!-- input -->
             <div class="conta">
               <input
+                id="input"
                 type="text"
                 name="text"
                 class="input"
                 required=""
                 placeholder="Type to search..."
               />
+              <div id="input_div" class="crate d-none"></div>
               <div class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="ionicon"
-                  viewBox="0 0 512 512"
-                >
-                  <title>Search</title>
-                  <path
-                    d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="32"
-                  ></path>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                    stroke-width="32"
-                    d="M338.29 338.29L448 448"
-                  ></path>
-                </svg>
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
               </div>
             </div>
             <button id="form-open" class="nav_button text-white">
@@ -108,16 +107,165 @@
                 class="fa-solid fa-arrow-right-to-bracket"
                 style="color: #ffffff"
               ></i>
-              Kirsh
+              Kirish
             </button>
           </div>
         </div>
       </div>
     </nav>
+    
 
     <div id="selo" class="fs-1"></div>
 
-    <header id="open_header" class="container"></header>
+    <header id="open_header" class="container">
+      <!-- <div class="row row-gap-5">
+        <div id="qism" class=" invisible-scrollbar col-xl-3">
+       
+        </div>
+        <div id="bg_iframe" class="col-xl-8">    
+    
+        </div>
+      </div> -->
+    </header>
+
+
+    <footer  style="margin-top: 60px;" id="dk-footer" class="dk-footer footer_bagc container   p-3  ">
+      <div class="">
+        <div class="row mltr">
+          <div class="col-md-12 col-lg-4 col-xl-4 col-12">
+            <div class="dk-footer-box-info">
+              <a href="./index.html" class="footer-logo">
+              <p class="footer-info-text">
+               
+              </p>
+              <div class="footer-social-link">
+                <h3>Follow us</h3>
+                <ul>
+                  <li>
+                    <a href="https://t.me/Men_Izlagan_Anime">
+                      <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>                 </a>
+                  </li>
+                 
+                  <li>
+                    <a href="https://www.youtube.com/@Uzbekchaanimelar-2024">
+                      <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>                   </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-discord" style="color: #ffffff;"></i>                    </a>
+                    </li>
+                  <li>
+                    <a href="https://www.instagram.com/i__can__2004?igsh=d2pnc3E0YzRxeXFh">
+                      <i class="fa-brands fa-instagram"></i>                  </a>
+                  </li>
+                </ul>
+              </div>
+              <div  class="footer_img ">
+                <img src="https://wallpapercave.com/wp/wp10424264.jpg" alt="" width="230px" height="300px">
+              </div>
+            </div>
+          </div>
+          <!-- End Col -->
+          <div class="col-md-12 col-lg-8">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="contact-us  mt-5 ">
+                  <div class="contact-icon d-none d-md-block">
+                  <a href="https://maps.app.goo.gl/Ar1nXmvhBwAaqib5A">
+                    <i class="fa-regular fa-map" style="color: #0887e7;"></i>                  </div>
+                  </a>
+                  <!-- End contact Icon -->
+                  <div class="contact-info d-none d-lg-block">
+                  <a href="https://maps.app.goo.gl/Ar1nXmvhBwAaqib5A">  <h3>Toshkent</h3></a>
+                    <p>2004 08 26</p>
+                  </div>
+                  <!-- End Contact Info -->
+                </div>
+                <!-- End Contact Us -->
+              </div>
+              <!-- End Col -->
+              <div class="col-md-6">
+                <div class="contact-us contact-us-last mt-5 ">
+                  <div class="contact-icon d-none d-md-block">
+                    <i
+                      class="fa fa-volume-control-phone"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <!-- End contact Icon -->
+                  <div class="contact-info d-none d-md-block">
+                    <h3>+93 311 50 47 </h3>
+                    <p>Give us a call</p>
+                  </div>
+                  <!-- End Contact Info -->
+                </div>
+                <!-- End Contact Us -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Contact Row -->
+            <div  class="row row_top">
+              <div class="col-md-12 col-lg-6">
+                <div class="footer-widget footer-left-widget">
+                  <div class="section-heading">
+                    <h3>Foydali havolalar</h3>
+                    <span class="animate-border border-black"></span>
+                  </div>
+                  <ul class="uploa">
+                    <li style="cursor: pointer;" class="text-white">
+                      Kategoriyalar
+                    </li>
+                    <li>
+                      <a href="#">Ongoinng</a>
+                    </li>
+                    <li>
+                      <a href="#">Fantastika</a>
+                    </li>
+                    <li>
+                      <a href="#">Jangari</a>
+                    </li>
+                  </ul>
+                  <ul class="uploa">
+                    <li style="cursor: pointer;" class="text-white">
+                     Kontaklar
+                    </li>
+                    <li>
+                      <a href="#">+93 311 50 47</a>
+                    </li>
+                    <li>
+                      <a href="#">+91 0013043</a>
+                    </li>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Footer Widget -->
+              </div>
+              <!-- End col -->
+              <div class="col-md-12 col-lg-6">
+                <div class="footer-widget">
+                  <div class="section-heading">
+                    <a href="https://t.me/Men_Izlagan_Anime" class="a" style="cursor: pointer;">Obuna boʻling</a>
+                    <span class="animate-border border-black mt-1"></span>
+                  </div>
+                  <p>
+                    Saytda chop etilgan har qanday materiallarga bo'lgan barcha huquqlar O'zbekiston va xalqaro mualliflik huquqi va turdosh huquqlar to'g'risidagi qonun hujjatlariga muvofiq himoyalangan. Matn, fotosurat, audio va video materiallardan har qanday foydalanish faqat mualliflik huquqi egasining roziligi bilan mumkin
+                  </p>
+                 
+                  <!-- End form -->
+                </div>
+                <!-- End footer widget -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+          <!-- End Col -->
+        </div>
+      </div>
+    </footer>
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
@@ -137,5 +285,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/openAnime.js"></script>
+    <script src="./js/kirish_render.js"></script>
+    <script src="./js/render.js"></script>
   </body>
 </html>
