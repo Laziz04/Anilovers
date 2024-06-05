@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+    <title>𝙰𝚗𝚒𝚕𝚘𝚟𝚎𝚛𝚜</title>    <!-- Required meta tags -->
     <meta charset="utf-8" />
+    <link rel="shortcut icon" type="x-icon" href="./logo.png" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -26,6 +26,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
 
     <!-- css -->
     <link rel="stylesheet" href="./css/stayle.css" />
@@ -115,18 +122,25 @@
     </nav>
     
 
-    <div id="selo" class="fs-1"></div>
 
-    <header id="open_header" class="container">
-      <!-- <div class="row row-gap-5">
-        <div id="qism" class=" invisible-scrollbar col-xl-3">
-       
-        </div>
-        <div id="bg_iframe" class="col-xl-8">    
-    
-        </div>
-      </div> -->
+    <header id="open_header" class="container mt-4">
     </header>
+
+    <section class="container mt-5  ">
+      <div class="w-100 borderw">
+        <div style="flex-wrap: wrap;" class="d-flex gap-3 ">
+          <button class="kirish_desc  text-white" onclick="malumot()">Malumot</button>
+          <button class="kirish_desc  text-white" onclick="comment()">Izohlar</button>
+          <button class="kirish_desc  text-white" onclick="Creators()">Ijodkorlar</button>
+          <button class="kirish_desc  text-white" onclick="kadrlar()">Kadrlar</button>
+        </div>
+       <div id="border" class="text-white mt-3">
+      
+       </div>
+      </div>
+     
+    
+    </section>
 
 
     <footer  style="margin-top: 60px;" id="dk-footer" class="dk-footer footer_bagc container   p-3  ">
@@ -266,6 +280,9 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
@@ -287,5 +304,6 @@
     <script src="./js/openAnime.js"></script>
     <script src="./js/kirish_render.js"></script>
     <script src="./js/render.js"></script>
+    <script src="./js/opendesc.js"></script>
   </body>
 </html>

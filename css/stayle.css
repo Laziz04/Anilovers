@@ -580,6 +580,21 @@ span {
     bounceIn 0.5s ease forwards;
 }
 
+.visible-scrollbars,
+.invisible-scrollbars,
+.mostly-customized-scrollbar {
+  display: block;
+  overflow: auto;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+}
+
+.invisible-scrollbars::-webkit-scrollbar {
+  display: none;
+}
+
 /* scroll card */
 
 .visible-scrollbar,
@@ -587,9 +602,10 @@ span {
 .mostly-customized-scrollbar {
   display: block;
   overflow: auto;
-  height: 630px;
-  padding: 1em;
+  height: 482px;
   border: none;
+  border-radius: 10px;
+  position: relative;
 }
 
 .invisible-scrollbar::-webkit-scrollbar {
@@ -599,12 +615,20 @@ span {
 .mostly-customized-scrollbar::-webkit-scrollbar {
   width: 5px;
   height: 8px;
-  background-color: #aaa;
+  /* background-color: #aaa; */
 }
 
 /* Add a thumb */
 .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
   background: #000;
+}
+
+.sccrollbars_pad {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  right: 0;
 }
 
 /* iframe */
@@ -622,8 +646,57 @@ span {
   height: 100%;
 }
 
-.qism2 {
-  width: 250px;
-  height: 200px;
-  border-radius: 20px;
+.qism1 {
+  width: 350px;
+  height: 218px;
+  border-radius: 10px;
+}
+
+.borderw {
+  border: none;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  margin-top: 20px;
+  font-size: 18px;
+  border-top: #f09c42 2px solid;
+  padding-top: 10px;
+  padding-top: 20px;
+}
+
+.kirish_desc:active {
+  color: #f09c42;
+}
+
+.berdf {
+  border-radius: 10px !important;
+  background-color: #ffffff !important;
+}
+
+.cooment_style {
+  width: 150px;
+  height: 55px;
+  padding: 7px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-align: center;
+}
+.cooment_style h5 {
+  font-size: 15px;
+  color: #8b4c07;
+}
+.img_cover {
+  width: 220px;
+  height: 200px !important;
+  border-radius: 8px !important;
+}
+
+.comment_input {
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #f6bc7dfa;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #f29824;
 }
