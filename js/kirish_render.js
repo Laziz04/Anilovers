@@ -33,8 +33,10 @@ const getFilteredIframe = (id) => {
          
           </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-5 col-12 mt-4 ">
-        <div class="invisible-scrollbar ">
+      <div class="col-xl-4 col-lg-4 col-md-5 col-12 ">
+      <button class=" d-sm-block w-75 button mb-5">${item.name}</button>
+
+        <div class="invisible-scrollbar">
         <div class="sccrollbars_pad">
         <div class="qism1">
         <iframe class="qism1"
