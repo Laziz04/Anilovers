@@ -15,15 +15,17 @@ input.addEventListener("input", (e) => {
 
         input_div.innerHTML = "";
 
-        bestCards.forEach((item) => {
+        bestCards.forEach((item, id) => {
           input_div.innerHTML += `
             <div class="search_table mb-3">
               <div class="d-flex align-items-start gap-2">
                 <div class="search_table_img">
-                  <img style="border-radius: 10px" src="${item.img}" alt="" width="50px" height="60px" />
+                  <img style="border-radius: 10px" src="${item.img}" alt="" width="70px" height="100px" />
                 </div>
                 <div>
-                  <a href="./kirish.html" class="table_title">${item.name}</a>
+                    <a style="color: #fff;" onclick="openAnime(${item.id})" id="hrfd-${item.id}" style="text-decoration: none;" href="#">
+                                ${item.name}
+                    </a>  
                 </div>
               </div>
             </div>

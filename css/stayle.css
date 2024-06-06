@@ -74,6 +74,18 @@ li {
   padding: 8px 15px;
   width: auto;
 }
+
+.buttongh {
+  background: #f29824;
+  border-radius: 6px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 15px;
+  width: auto;
+  margin-top: 15px;
+}
 .active {
   padding: 8px 15px;
   font-size: 14px;
@@ -659,7 +671,7 @@ span {
   border-radius: 3px;
   margin-top: 20px;
   font-size: 18px;
-  border-top: #f09c42 2px solid;
+  border-top: #5d4a1f 3px solid;
   padding-top: 10px;
   padding-top: 20px;
 }

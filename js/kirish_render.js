@@ -32,9 +32,10 @@ const getFilteredIframe = (id) => {
           </iframe>
          
           </div>
+                <button class=" d-sm-block w-100 buttongh mb-5">${item.name}</button>
+
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-5 col-12 ">
-      <button class=" d-sm-block w-75 button mb-5">${item.name}</button>
+      <div class="col-xl-4 col-lg-4 col-md-5 col-12 mt-4">
 
         <div class="invisible-scrollbar">
         <div class="sccrollbars_pad">
@@ -49,8 +50,11 @@ const getFilteredIframe = (id) => {
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
+
+     <button class=" d-sm-block w-100 buttongh mt-2">2 Qism</button>
+
        </div>
-       <div class="qism1">
+       <div class="qism1 mt-5">
        <iframe class="qism1"
        width="1045"
        height="549"
@@ -62,7 +66,9 @@ const getFilteredIframe = (id) => {
        allowfullscreen
      ></iframe>
       </div>
-      <div class="qism1">
+           <button class=" d-sm-block w-100 buttongh mt-1">3 Qism</button>
+
+      <div class="qism1 ">
       <iframe class="qism1"
       width="1045"
       height="549"
@@ -74,6 +80,8 @@ const getFilteredIframe = (id) => {
       allowfullscreen
     ></iframe>
      </div>
+                <button class=" d-sm-block w-100 buttongh mt-1">4 Qism</button>
+
      <div class="qism1">
      <iframe class="qism1"
      width="1045"
@@ -86,6 +94,8 @@ const getFilteredIframe = (id) => {
      allowfullscreen
    ></iframe>
     </div>
+               <button class=" d-sm-block w-100 buttongh mt-1">5 Qism</button>
+
     <div class="qism1">
     <iframe class="qism1"
     width="1045"
@@ -98,6 +108,8 @@ const getFilteredIframe = (id) => {
     allowfullscreen
   ></iframe>
    </div>
+              <button class=" d-sm-block w-100 buttongh mt-1">6 Qism</button>
+
    <div class="qism1">
    <iframe class="qism1"
    width="1045"
@@ -110,6 +122,8 @@ const getFilteredIframe = (id) => {
    allowfullscreen
  ></iframe>
   </div>
+             <button class=" d-sm-block w-100 buttongh mt-1">7 Qism</button>
+
 
   <div class="qism1">
   <iframe class="qism1"
@@ -123,6 +137,7 @@ const getFilteredIframe = (id) => {
   allowfullscreen
 ></iframe>
  </div>
+           <button class=" d-sm-block w-100 buttongh mt-1">8 Qism</button>
 
  <div class="qism1">
  <iframe class="qism1"
@@ -136,6 +151,7 @@ const getFilteredIframe = (id) => {
  allowfullscreen
 ></iframe>
 </div>
+           <button class=" d-sm-block w-100 buttongh mt-1">9 Qism</button>
 
 <div class="qism1">
 <iframe class="qism1"
@@ -149,6 +165,7 @@ referrerpolicy="strict-origin-when-cross-origin"
 allowfullscreen
 ></iframe>
 </div>
+           <button class=" d-sm-block w-100 buttongh mt-1">10 Qism</button>
 
 <div class="qism1">
 <iframe class="qism1"
@@ -162,6 +179,7 @@ referrerpolicy="strict-origin-when-cross-origin"
 allowfullscreen
 ></iframe>
 </div>
+           <button class=" d-sm-block w-100 buttongh mt-1">11 Qism</button>
 
 <div class="qism1">
 <iframe class="qism1"
@@ -175,20 +193,7 @@ referrerpolicy="strict-origin-when-cross-origin"
 allowfullscreen
 ></iframe>
 </div>
-
-<div class="qism1">
-<iframe class="qism1"
-width="1045"
-height="549"
-src="${item.qism13}"
-title="Anime:Lv2 Super Aldash Mahoratlarim Bilan Oʻzga Dunyoda Hayot 9-qism"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-referrerpolicy="strict-origin-when-cross-origin"
-allowfullscreen
-></iframe>
-</div>
-
+           <button class=" d-sm-block w-100 buttongh mt-1">12 Qism</button>
         </div>
          
         </div>
@@ -224,38 +229,3 @@ const malumot = (id) => {
     });
 };
 malumot(id);
-
-const kadrlar = (id) => {
-  axios
-    .get(`https://d90acc4e338622f6.mokky.dev/card?id=${id}`)
-    .then((response) => {
-      const opendesc = response.data;
-      console.log(opendesc);
-
-      border.innerHTML = opendesc
-        .map(
-          (item) => `
-      <div style="flex-wrap: wrap" class="d-flex gap-2">
-        ${item.kadrlar
-          .map(
-            (kadr) => `
-          <div class="img_cover">
-            <img
-              style="object-fit: cover"
-              src="${kadr}"
-              alt=""
-              width="100%"
-              height="100%"
-              class="img_cover"
-            />
-          </div>
-        `
-          )
-          .join("")}
-      </div>
-    `
-        )
-        .join("");
-    });
-};
-kadrlar(id);

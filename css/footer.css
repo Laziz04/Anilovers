@@ -443,21 +443,19 @@ p {
 }
 
 .fa-telegram {
-  background: linear-gradient(135deg, #0088cc, #0088cc);
+  background-color: white;
   font-size: 29px !important;
+  color: #b88305 !important;
 }
 
 .fa-youtube {
-  background: linear-gradient(135deg, #ff0000, #ff0000);
+  background-color: white;
   font-size: 25px !important;
-}
-
-.fa-discord {
-  background: linear-gradient(135deg, #7289da, #7289da);
-  font-size: 25px !important;
+  color: #b88305 !important;
 }
 
 .fa-instagram {
-  background: linear-gradient(135deg, #e1306c, #fd0350) !important;
+  background-color: white;
   font-size: 27px !important;
+  color: #b88305 !important;
 }

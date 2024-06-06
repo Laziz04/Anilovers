@@ -27,29 +27,27 @@ const animeNews = () => {
       animeList.forEach((anime) => {
         if (anime.yil == "2024") {
           row.innerHTML += `
-          <div class="mt-5 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-              <div class="section_card position-relative">
-                  <div class="d-flex sdf w-100 align-items-center">
-                      <span class="spank">${anime.yil}</span>
-                  </div>
-                  <img src="${anime.img}" alt="" width="100%"/>
-                  <div class="content">
-                      <h4 class="content_title">${anime.name}</h4>
-                      <div class="des">
-                          <p class="content_subtitle text-white">Janri : ${anime.desc}</p>
-                          <div class="d-flex align-items-center justify-content-between">
-                              <a onclick="openAnime(${anime.id})" id="hrfd-${anime.id}" style="text-decoration: none;" href="#">
-                                  <button class="btton text-white d-flex align-items-center content_button">
-                                      Korish
-                                      <i class="me-3 fa-solid fa-play content_icon" style="color: #ffffff;"></i>
-                                  </button>
-                              </a>
-                              <i id="heart-${anime.id}" onclick="basket(${anime.id})" class="animatsiya fa-solid fa-heart psd" style="color: #ffffff"></i>
-                          </div>
+           <div class="mt-5 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
+          <div class="section_card cardlar position-relative">
+              <div class="d-flex sdf w-100 align-items-center">
+                  <span class="spank">${anime.yil}</span>
+              </div>
+              <img src="${anime.img}" alt="" width="100%"/>
+              <div class="content">
+                  <h4 class="content_title">${anime.name}</h4>
+                  <div class="des">
+                      <p class="content_subtitle text-white">Janri : ${anime.desc}</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                          <a onclick="openAnime(${anime.id})" id="hrfd-${anime.id}" style="text-decoration: none;" href="#">
+                              <button class="btton text-white d-flex align-items-center content_button">
+                                  Korish
+                                  <i class="me-3 fa-solid fa-play content_icon" style="color: #ffffff;"></i>
+                              </button>
+                          </a>
+                          <i id="heart-${anime.id}" onclick="basket(${anime.id})" class="animatsiya fa-solid fa-heart psd" style="color: #ffffff"></i>
                       </div>
                   </div>
-              </div>
-          </div>`;
+              </div>`;
         } else {
           console.log("xato");
         }
@@ -60,45 +58,41 @@ const animeNews = () => {
     });
 };
 
-const animeFilim = () => {
+const animeteligram = () => {
   anifilim.classList.add("active");
   newAnime.classList.remove("active");
   hammr.classList.remove("active");
 
   axios
-    .get("https://d90acc4e338622f6.mokky.dev/card?flim=flim")
+    .get("https://f7867d80d8bbf3cf.mokky.dev/aniTeligram")
     .then((response) => {
       const animeList = response.data;
       row.innerHTML = "";
 
       animeList.forEach((anime) => {
-        if (anime) {
+        if (anime.id > 50) {
           row.innerHTML += `
-            <div class="mt-5 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-                <div class="section_card position-relative">
-                    <div class="d-flex sdf w-100 align-items-center">
-                        <span class="spank">${anime.yil}</span>
-                    </div>
-                    <img src="${anime.img}" alt="" width="100%"/>
-                    <div class="content">
-                        <h4 class="content_title">${anime.name}</h4>
-                        <div class="des">
-                            <p class="content_subtitle text-white">Janri : ${anime.desc}</p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <a onclick="openAnime(${anime.id})" id="hrfd-${anime.id}" style="text-decoration: none;" href="#">
-                                    <button class="btton text-white d-flex align-items-center content_button">
-                                        Korish
-                                        <i class="me-3 fa-solid fa-play content_icon" style="color: #ffffff;"></i>
-                                    </button>
-                                </a>
-                                <i id="heart-${anime.id}" onclick="basket(${anime.id})" class="animatsiya fa-solid fa-heart psd" style="color: #ffffff"></i>
-                            </div>
-                        </div>
+          <div class="mt-5 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
+        <div class="section_card cardlar position-relative">
+            <div class="d-flex sdf w-100 align-items-center">
+                <span class="spank">${anime.yil}</span>
+            </div>
+            <img src="${anime.img}" alt="" width="100%"/>
+            <div class="content">
+                <h4 class="content_title">${anime.name}</h4>
+                <div class="des">
+                    <p class="content_subtitle text-white">Janri : ${anime.desc}</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a  style="text-decoration: none;" href="${anime.url}">
+                            <button class="btton text-white d-flex align-items-center content_button">
+                                Korish
+                                <i class="me-3 fa-solid fa-play content_icon" style="color: #ffffff;"></i>
+                            </button>
+                        </a>
+                        <i id="heart-${anime.id}" onclick="basket(${anime.id})" class="animatsiya fa-solid fa-heart psd" style="color: #ffffff"></i>
                     </div>
                 </div>
             </div>`;
-        } else {
-          console.log("xato");
         }
       });
     })
@@ -197,7 +191,7 @@ const fetchAndDisplayCards = () => {
         </div>`;
         row.appendChild(card);
       });
-      startIndex += 12;
+      startIndex += 8;
     })
     .catch((err) => {
       console.log(err);

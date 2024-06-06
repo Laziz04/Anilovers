@@ -9,7 +9,7 @@ const render = () => {
 
       row.innerHTML = "";
 
-      bestcard.splice(0, 12).forEach((item) => {
+      bestcard.splice(0, 8).forEach((item) => {
         row.innerHTML += `
         <div class="mt-5 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
             <div class="section_card position-relative">
