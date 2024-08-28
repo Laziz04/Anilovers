@@ -19,7 +19,7 @@ const animeNews = () => {
   hammr.classList.remove("active");
 
   axios
-    .get("https://d90acc4e338622f6.mokky.dev/card")
+    .get("https://6d548820c3f18dbd.mokky.dev/Cards")
     .then((response) => {
       const animeList = response.data;
       row.innerHTML = "";
@@ -105,7 +105,7 @@ const barchasi = () => {
   newAnime.classList.remove("active");
   anifilim.classList.remove("active");
   axios
-    .get("https://d90acc4e338622f6.mokky.dev/card")
+    .get("https://6d548820c3f18dbd.mokky.dev/Cards")
     .then((res) => {
       console.log(res.data);
       const bestcard = res.data;
@@ -146,7 +146,7 @@ let startIndex = 0;
 
 const fetchAndDisplayCards = () => {
   axios
-    .get("https://d90acc4e338622f6.mokky.dev/card")
+    .get("https://6d548820c3f18dbd.mokky.dev/Cards")
     .then((res) => {
       console.log(res.data);
       const rsatish = res.data;

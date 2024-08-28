@@ -8,7 +8,7 @@ const loading = `
 
 const renderLogautw = () => {
   axios
-    .get("https://d90acc4e338622f6.mokky.dev/card")
+    .get("https://6d548820c3f18dbd.mokky.dev/Cards")
     .then((response) => {
       const data = response.data;
 

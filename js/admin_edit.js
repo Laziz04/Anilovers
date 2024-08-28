@@ -15,7 +15,7 @@ const new_card = new bootstrap.Modal("#new_card", {
 const editAnime = (id) => {
   lastId = id;
   axios
-    .get(`https://d90acc4e338622f6.mokky.dev/card/${id}`)
+    .get(`https://6d548820c3f18dbd.mokky.dev/Cards/${id}`)
     .then((res) => {
       const result = res.data;
       console.log(result);
@@ -41,7 +41,7 @@ const savelogmodal = () => {
   };
 
   axios
-    .patch(`https://d90acc4e338622f6.mokky.dev/card/${lastId}`, data)
+    .patch(`https://6d548820c3f18dbd.mokky.dev/Cards/${lastId}`, data)
     .then((res) => {
       const updatedData = res.data;
       console.log(updatedData);
@@ -70,7 +70,7 @@ const savelogmodal = () => {
 
 const delet = (id) => {
   axios
-    .delete(`https://d90acc4e338622f6.mokky.dev/card/${id}`)
+    .delete(`https://6d548820c3f18dbd.mokky.dev/Cards/${id}`)
     .then((res) => {
       console.log(res.data);
       window.location.reload();
@@ -114,7 +114,7 @@ const newanime = () => {
   };
 
   axios
-    .post("https://d90acc4e338622f6.mokky.dev/card", animeData)
+    .post("https://6d548820c3f18dbd.mokky.dev/Cards", animeData)
     .then((response) => {
       const newAnime = response.data;
       Toastify({
@@ -146,7 +146,7 @@ const newanime = () => {
 searchAnilovers.addEventListener("input", (e) => {
   const searchanime = e.target.value;
   axios
-    .get(`https://d90acc4e338622f6.mokky.dev/card?name=*${searchanime}`)
+    .get(`https://6d548820c3f18dbd.mokky.dev/Cards?name=*${searchanime}`)
     .then((anj) => {
       const bestcard = anj.data;
       if (searchanime.length > 0) {

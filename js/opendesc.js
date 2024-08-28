@@ -1,5 +1,5 @@
 const comment = () => {
-  axios.get("https://d90acc4e338622f6.mokky.dev/card").then((der) => {
+  axios.get("https://6d548820c3f18dbd.mokky.dev/Cards").then((der) => {
     const opendesc = der.data;
     console.log(opendesc);
     border.innerHTML = "";
@@ -32,7 +32,7 @@ const comment = () => {
 };
 
 const Creators = () => {
-  axios.get("https://d90acc4e338622f6.mokky.dev/card").then((der) => {
+  axios.get("https://6d548820c3f18dbd.mokky.dev/Cards").then((der) => {
     const opendesc = der.data;
     console.log(opendesc);
     border.innerHTML = "";

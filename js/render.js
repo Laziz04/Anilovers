@@ -2,7 +2,7 @@ const row = document.getElementById("row");
 
 const render = () => {
   axios
-    .get("https://d90acc4e338622f6.mokky.dev/card")
+    .get("https://6d548820c3f18dbd.mokky.dev/Cards")
     .then((res) => {
       console.log(res.data);
       const bestcard = res.data;

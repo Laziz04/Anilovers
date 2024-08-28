@@ -9,7 +9,7 @@ input.addEventListener("input", (e) => {
     input_div.classList.add("crate");
 
     axios
-      .get(`https://d90acc4e338622f6.mokky.dev/card?name=*${value}`)
+      .get(`https://6d548820c3f18dbd.mokky.dev/Cards?name=*${value}`)
       .then((response) => {
         const bestCards = response.data;
 

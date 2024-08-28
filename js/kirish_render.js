@@ -7,7 +7,7 @@ const openAnime = (id) => {
 
 const getFilteredIframe = (id) => {
   axios
-    .get(`https://d90acc4e338622f6.mokky.dev/card?id=${id}`)
+    .get(`https://6d548820c3f18dbd.mokky.dev/Cards?id=${id}`)
     .then((response) => {
       const filteredIframe = response.data;
       console.log(filteredIframe);
@@ -216,7 +216,7 @@ if (id) {
 
 const malumot = (id) => {
   axios
-    .get(`https://d90acc4e338622f6.mokky.dev/card?id=${id}`)
+    .get(`https://6d548820c3f18dbd.mokky.dev/Cards?id=${id}`)
     .then((descrp) => {
       const comment_desc = descrp.data;
       console.log(comment_desc);
